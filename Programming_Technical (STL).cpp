@@ -3,7 +3,8 @@ Flutter: google
 Typescript: microsoft
 React-native: facebook
 
-
+int main() { /*  */ }
+int main(int argc, char* argv[]) { /*  */ }
 
 fprintf(stderr, "There is an error!\n");
 fprintf(stderr, "%d", keyVariable);
@@ -217,6 +218,8 @@ while (scanf("%d", &n), n) {};
 while (scanf("%d", &n) == 1 && n != 0) {};
 while (cin >> data) {}
 matrix[i][j] = matrix_one_demensional[i * n + j];
+x & 1 ==== x % 2
+x >> 1 ===== x / 2
 
 
 Imperative paradigm <huong menh lenh> {
