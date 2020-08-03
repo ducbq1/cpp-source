@@ -142,3 +142,35 @@ x >> 1 ===== x / 2
 
 Parameter is variable in the declaration of function.
 Argument is the actual value of this variable that gets passed to function.
+
+string str1("first string");
+string str2(str1);
+string str3(5, '#');
+string str4(str1, 6, 6);
+string str5(str2.begin(), str2.begin() + 5);
+string str6 = str4;
+str4.clear();
+int len = str6.length();
+char ch = str6.at(2);
+char ch_f = str6.front();
+char ch_b = str6.back();
+const char* charstr = str6.c_str();
+str6.append(" extension");
+str4.append(str6, 0, 6);
+if (str6.find(str4) != string::npos) { /*  */ }
+str6.substr(7, 3);
+str6.substr(7);
+str6.erase(7, 4);
+str6.erase(str6.begin() + 5, str6.end() - 3);
+str6.replace(2, 7, "ese are test");
+
+int a[3];
+int a[3] = {1, 2, 3};
+int a[3] = {};
+int a[3] = {[0...1] = 3};
+int *a;
+int* a;
+int*a;
+int * a;
+
+

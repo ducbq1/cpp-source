@@ -3,11 +3,12 @@
 
 #define length 10
 
-void replace_char(char *ch, char c1, char c2)
-{
-	int i;
-	for(i=0; *(ch+i)!='\0';i++)
-		if(*(ch+i)==c1) *(ch+i) = c2;
+
+void replace_char(char *charRoot, char char1, char char2) {
+	for (int i = 0; *(charRoot + i) != '\0'; i++) {
+		if (*(charRoot + i) == char1)
+			*(charRoot + i) == char2;
+	}
 }
 
 int main()
