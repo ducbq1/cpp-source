@@ -9,6 +9,9 @@ int part(int m, int n) {
 }
 
 int main() {
-    cout << part(34, 3) << " ";
+    // cout << part(34, 3) << " ";
+    int a, b;
+    cin >> a >> b;
+    cout << part(a, b) << endl;
     return 0;
 }

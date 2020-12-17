@@ -2,23 +2,6 @@
 
 using namespace std;
 
-void permutation(int left, int right, int n) {
-
-  int i;
-  for (i = left; i <= right; i++) {
-    cout << i << ' ';
-    if (right == n) {
-      return;
-    } else {
-      left++;
-      permutation(left, right + 1, n);
-      left--;
-    }
-    
-  }
-
-}
-
 int main() {
 
   ios::sync_with_stdio(false);
@@ -26,8 +9,19 @@ int main() {
 
   int n;
   cin >> n;
+  vector<int> v;
 
-  permutation(1, 1, n);
+  for (int i = 1; i <= n; i++) {
+    v.push_back(i);
+  }
+
+  do {
+    for (int i = 0; i < n; i++) {
+      cout << v[i] << ' ';
+    }
+    cout << '\n';
+  } while (next_permutation(v.begin(), v.end()));
+
 
   return 0;
 
