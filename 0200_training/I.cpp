@@ -11,7 +11,7 @@ int main() {
   cin >> sequence;
 
   stack<char> st;
-  int count = 0;
+  int counting = 0;
 
   for (int i = 0; i < sequence.length(); i++) {
     if (sequence[i] == '(' || sequence[i] == '[') {
@@ -23,13 +23,13 @@ int main() {
     } else if (sequence[i] == ']') {
       if (!st.empty() && check(st.top(), sequence[i])) {
         st.pop();
-        count++;
+        counting++;
       } 
     } 
   }
 
   if (st.empty()) {
-    cout << count << '\n';
+    cout << counting << '\n';
     cout << sequence << '\n';
   } else {
     cout << 0;
